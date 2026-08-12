@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+        <!-- Aqui começa o CSS -->
+    <style>
+        /* Início */
+        /* Comentário no CSS */
+
+        body { /* Eatilo geral do corpo da página */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fontes do corpo da página */
+            background-image: url(https://i.pinimg.com/originals/ec/a9/6d/eca96db6f0ee67444302c7cdd3230ad7.gif);
+            background-color: purple; /* Cor de fundo */
+            margin: 20px; /* Espaçamento externo */
+            color: rgb(230, 230, 230); /* Cor dos texto da página */
+        }
+
+        header { /* Cabeçalho da página */
+            background-color: darkblue; /* Cor de fundo do cabeçalho */
+            background-image: url(https://i.redd.it/n3mqo6y80onf1.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(0, 0, 0); /* Cor dos texto do cabeçalho */
+            padding: 20px; /* Espaçamento interno */
+            text-align: Center; /* Alinhamento do texto: Centro */
+            box-shadow: 0 15px 20px red;
+        }
+        header h1 {
+            text-shadow: 0 15px 20px rgb(190, 0, 0);
+        }
+
+        h1 a { /* Links dentro do h1(título) */
+            color: rgb(230, 230, 230); /* Cor do texto */
+            text-decoration: none; /* Decoração do texto */
+        }
+
+        h1 a:hover { /* Quando estiver com o mouse sobre os links dentro do h1(título) */
+            color: red; /* Cor do texto */
+            text-decoration: underline; /* Decoração do texto */
+        }
+
+        nav a {  /* Links dentro do menu de navegação */
+            text-decoration: none; /* Decoração do texto: nenhuma */
+            color: rgb(230, 230, 230); /* Cor dos textos */
+            margin: 0px 30px; /* Espaçamento lateral */
+            font-size: 20px; /* Tamanho da fonte */
+        }
+
+        nav a:hover { /* Quando estiver com o mouse sobre os links dentro do menu de navegação */
+            text-decoration: underline; /* Decoração do texto: sublinhado */
+            color: red; /* Cor */
+        }
+
+        .pukasi {
+            color: black;
+        }
+        
+        .pukasi:hover { /* Link do Pukasi */
+            text-decoration: underline; /* Decoração */
+            color: red; /* Cor */
+        }
+
+        .rambley:hover { /* Link do Rambley */
+            text-decoration: underline; /* Decoração */
+            color: indigo; /* Cor */
+            background-color: blue; /* Cor fundo */
+        }
+
+        .pumpkin:hover { /* Link do Lorenzo */
+            text-decoration: underline; /* Decoração */
+            color: yellow; /* Cor */
+        }
+
+        .bill:hover { /* Link do Bill */
+            text-decoration: underline; /* Decoração */
+            color: black; /* Cor */
+        }
+
+        .toy {
+            color: black;
+        }
+
+        .toy:hover { /* TOY BONNIE >:3 */
+            color: lightblue; /* COR PRO TOY BONNIE */
+            text-decoration: underline; /* DECORAÇÃO PRO TOY BONNIE */
+        }
+
+        .subtitulo { /* Subtítulo */
+            text-align: Center; /* Alinhamento do texto: Centro */
+            margin: 50px;
+        }
+
+        .subtitulo:hover { /* Em cima do subtítulo */
+            text-decoration: underline; /* Decoração */
+            color: red; /* Cor */
+        }
+
+        .subtitulo a{
+            color: rgb(230, 230, 230); /* Cor da letra */
+            text-decoration: none; /* "Decoração" do texto */
+        }
+
+        .subtitulo a:hover{
+            text-decoration: underline; /* "Decoração" do texto ao passar o mouse sobre */
+            color: purple; /* Cor da letra ao passar o mouse sobre */
+            background-color: black; /* Cor de fundo da letra ao passar o mouse sobre */
+        }
+
+        .fundo { /* Fundo */
+            display: flex; /* Coloca os itens dentro da <div> um do lado do outro/Ativa Flexbox */
+            gap: 10px; /* Espaço entre os cards */
+            width: 100%; /* Largura */
+            height:100%; /* Altura */
+            flex-wrap: wrap; /* Permite quebrar linha */
+            justify-content: space-around; /* Distribui os cardes */
+            margin-top: 10px; /* Espaço acima */
+        }
+
+        .card { /* Cardes */
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1V_KpvwdCIVNGBfn04nkCBgwUN3flS5PoMQEXFWcPupkYxCRJ7lv-sy33mgS6hg0lOO7PIY7Cuu8vfnFB2mVKIViWwmaaqvgkku--zhHG&s=10); /* Imagem de fundo */
+            background-size: cover; /* Tamanho da imagem de fundo: cobrir */
+            background-position: center; /* Posição da imagem de fundo: no centro */
+            background-repeat: no-repeat; /* Repetição da imagem de fundo: sem repetição */
+            width: 300px; /* Largura */
+            height: 350px; /* Altura */
+            align-items: Center; /* Alinhar itens */
+            text-align: center; /* Alinhar textos */
+            background-color: grey; /* Cor de fundo */
+            margin: 30px; /* Espaçamento externo */
+            color: blue; /* Cor */
+            border-radius: 15px; /* Raio da borda */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        .card:hover { /* Mouse em cima dos cardes */
+            transform: translateY(-10px) scale(1.02); /* Move/Transforma */
+            border-color: red; /* Cor da borda */
+            box-shadow: 0 15px 20px rgb(255, 136, 0); /* Sombra */
+            background-image: url(https://i.pinimg.com/originals/76/e1/f2/76e1f27f75510488c67aa3c4adb9ed44.gif); /* Imagem de fundo ao passar o mouse sobre */
+            background-size: cover; /* Tamanho da imagem de fundo: cobrir */
+            background-position: center; /* Posição da imagem de fundo: no centro */
+            background-repeat: no-repeat; /* Repetição da imagem de fundo: sem repetição */
+            /*background-color: rgb(150, 0, 150);  / Cor de fundo */
+        }
+
+        .card img { /* Imagens dos cardes */
+            width: 40%; /* Largura */
+            height: auto; /* Altura */
+            object-fit: cover; /* Não sei */
+            border-radius: 15px; /* Raio da borda */
+        }
+
+        .vap {
+            text-decoration: none;
+            text-align: Center;
+            align-items: Center;
+            color: lightblue;
+        }
+
+        .vap:hover {
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Fim */
+    </style>
+    <!-- Aqui termina o CSS -->
+</head>
+<body>
+    <!-- Início -->
+    <!-- Comentário no HTML -->
+
+    <!-- Início do cabeçalho -->
+    <header>
+        <hr>
+        <h1>Um site sobre Terrible Mouse com (hiper)foco no <a href="https://terrible-mouse.fandom.com/wiki/Pukasi">Pukasi</a> 
+            (e em outros personagens que eu <a href="https://freddy-fazbears-pizza.fandom.com/pt-br/wiki/Toy_Bonnie" class="toy">gosto</a>)</h1>
+        <nav>
+            <a href="https://terrible-mouse.fandom.com/wiki/Pukasi" class="Pukasi">
+                Wiki do Pukasi
+            </a>
+
+            <a href="https://indigo-park.fandom.com/wiki/Rambley_the_Raccoon" class="rambley">
+                Wiki do Rambley
+            </a>
+            
+            <a href="https://the-walten-files-new.fandom.com/wiki/Lorenzo_Waterman" class="pumpkin">
+                Wiki do Pumpkin Rabbit
+            </a>
+
+            <a href="https://gravityfalls.fandom.com/wiki/Bill_Cipher" class="bill">
+                Wiki do Bill Cipher
+            </a>
+            
+        </nav>
+        <hr>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+
+
+
+
+
+                <!-- Subtítulo.Início() -->
+                <div class="subtitulo">
+                    <h2>EU AMO OS PERSONAGENS QUE APARECEM AQUI NESTE SITE (são os meus <a href="https://xtaleunderverse.fandom.com/wiki/Cross">favorito</a>s)</h2>
+                </div>
+                <!-- Subtítulo.Fim() -->
+
+
+
+
+
+
+    <div class="fundo">
+
+        <!-- Card 1 -->
+
+        <a href="https://xtaleunderverse.fandom.com/wiki/Cross">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/terrible-mouse/images/6/6b/Pukasi-TM-render.png/revision/latest/scale-to-width-down/1200?cb=20250829044713" 
+            alt="Pukasi de Terrible Mouse">
+            <h2>Pukasi</h2>
+        </div>
+        </a>
+
+        <!-- Card 2 -->
+
+        <a href="https://xtaleunderverse.fandom.com/wiki/Cross">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/terrible-mouse/images/9/97/Pula-TM-render.png/revision/latest/scale-to-width-down/1000?cb=20250826121410" 
+            alt="Pula de Terrible Mouse">
+            <h2>Pula</h2>
+        </div>
+        </a>
+
+        <!-- Card 3 -->
+
+        <a href="https://xtaleunderverse.fandom.com/wiki/Cross">
+        <div class="card">
+            <img src="https://static.tvtropes.org/pmwiki/pub/images/susie_tm_render_4.webp" 
+            alt="Susie de Terrible Mouse">
+            <h2>Susie</h2>
+        </div>
+        </a>
+
+    </div>
+
+
+    <hr>
+
+    <h1><a href="https://pokemondb.net/pokedex/vaporeon" class="vap">Vap</a></h1>
+
+    <hr>
+
+
+    <div class="fundo">
+
+        <!-- Card 4 -->
+
+        <a href="https://pokemondb.net/sprites/vaporeon">
+        <div class="card">
+            <img src="data:image/webp;base64,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" 
+            alt="Bill Cipher de Gravity Falls">
+            <h2>Bill</h2>
+        </div>
+        </a>
+
+        <!-- Card 5 -->
+
+        <a href="https://xtaleunderverse.fandom.com/wiki/Cross">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/the-walten-files-new/images/8/8b/1979LorenzoSureig.png/revision/latest/scale-to-width-down/1000?cb=20251018064235" 
+            alt="Pumpkin Rabbit de The Misteryous House/The Return of The Pumpkin Rabbit">
+            <h2>Pumpkin Rabbit</h2>
+        </div>
+        </a>
+        
+        <!-- Card 6 -->
+
+        <a href="https://pawpatrol.fandom.com/wiki/Marshall">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/indigo-park/images/4/41/Rambley_Doodle.webp/revision/latest?cb=20230729222739" 
+            alt="Rambley de Indigo Park">
+            <h2>Rambley</h2>
+        </div>
+        </a>
+
+    </div>
+
+
+     <!-- Fim -->
+</body>
+</html>
