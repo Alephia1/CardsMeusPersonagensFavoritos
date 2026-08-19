@@ -1,0 +1,163 @@
+/* Início */
+        /* Comentário no CSS */
+
+        body { /* Eatilo geral do corpo da página */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fontes do corpo da página */
+            background-image: url(https://i.pinimg.com/originals/ec/a9/6d/eca96db6f0ee67444302c7cdd3230ad7.gif);
+            background-color: purple; /* Cor de fundo */
+            margin: 20px; /* Espaçamento externo */
+            color: rgb(230, 230, 230); /* Cor dos texto da página */
+        }
+
+        header { /* Cabeçalho da página */
+            background-color: darkblue; /* Cor de fundo do cabeçalho */
+            background-image: url(https://i.redd.it/n3mqo6y80onf1.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(0, 0, 0); /* Cor dos texto do cabeçalho */
+            padding: 20px; /* Espaçamento interno */
+            text-align: Center; /* Alinhamento do texto: Centro */
+            box-shadow: 0 15px 20px red;
+        }
+        header h1 {
+            text-shadow: 0 15px 20px rgb(190, 0, 0);
+        }
+
+        h1 a { /* Links dentro do h1(título) */
+            color: rgb(230, 230, 230); /* Cor do texto */
+            text-decoration: none; /* Decoração do texto */
+        }
+
+        h1 a:hover { /* Quando estiver com o mouse sobre os links dentro do h1(título) */
+            color: red; /* Cor do texto */
+            text-decoration: underline; /* Decoração do texto */
+        }
+
+        nav a {  /* Links dentro do menu de navegação */
+            text-decoration: none; /* Decoração do texto: nenhuma */
+            color: rgb(230, 230, 230); /* Cor dos textos */
+            margin: 0px 30px; /* Espaçamento lateral */
+            font-size: 20px; /* Tamanho da fonte */
+        }
+
+        nav a:hover { /* Quando estiver com o mouse sobre os links dentro do menu de navegação */
+            text-decoration: underline; /* Decoração do texto: sublinhado */
+            color: red; /* Cor */
+        }
+
+        .pukasi {
+            color: black;
+        }
+        
+        .pukasi:hover { /* Link do Pukasi */
+            text-decoration: underline; /* Decoração */
+            color: red; /* Cor */
+        }
+
+        .rambley:hover { /* Link do Rambley */
+            text-decoration: underline; /* Decoração */
+            color: indigo; /* Cor */
+            background-color: blue; /* Cor fundo */
+        }
+
+        .pumpkin:hover { /* Link do Lorenzo */
+            text-decoration: underline; /* Decoração */
+            color: yellow; /* Cor */
+        }
+
+        .bill:hover { /* Link do Bill */
+            text-decoration: underline; /* Decoração */
+            color: black; /* Cor */
+        }
+
+        .toy {
+            color: black;
+        }
+
+        .toy:hover { /* TOY BONNIE >:3 */
+            color: lightblue; /* COR PRO TOY BONNIE */
+            text-decoration: underline; /* DECORAÇÃO PRO TOY BONNIE */
+        }
+
+        .subtitulo { /* Subtítulo */
+            text-align: Center; /* Alinhamento do texto: Centro */
+            margin: 50px;
+        }
+
+        .subtitulo:hover { /* Em cima do subtítulo */
+            text-decoration: underline; /* Decoração */
+            color: red; /* Cor */
+        }
+
+        .subtitulo a{
+            color: rgb(230, 230, 230); /* Cor da letra */
+            text-decoration: none; /* "Decoração" do texto */
+        }
+
+        .subtitulo a:hover{
+            text-decoration: underline; /* "Decoração" do texto ao passar o mouse sobre */
+            color: purple; /* Cor da letra ao passar o mouse sobre */
+            background-color: black; /* Cor de fundo da letra ao passar o mouse sobre */
+        }
+
+        .fundo { /* Fundo */
+            display: flex; /* Coloca os itens dentro da <div> um do lado do outro/Ativa Flexbox */
+            gap: 10px; /* Espaço entre os cards */
+            width: 100%; /* Largura */
+            height:100%; /* Altura */
+            flex-wrap: wrap; /* Permite quebrar linha */
+            justify-content: space-around; /* Distribui os cardes */
+            margin-top: 10px; /* Espaço acima */
+        }
+
+        .card { /* Cardes */
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1V_KpvwdCIVNGBfn04nkCBgwUN3flS5PoMQEXFWcPupkYxCRJ7lv-sy33mgS6hg0lOO7PIY7Cuu8vfnFB2mVKIViWwmaaqvgkku--zhHG&s=10); /* Imagem de fundo */
+            background-size: cover; /* Tamanho da imagem de fundo: cobrir */
+            background-position: center; /* Posição da imagem de fundo: no centro */
+            background-repeat: no-repeat; /* Repetição da imagem de fundo: sem repetição */
+            width: 300px; /* Largura */
+            height: 350px; /* Altura */
+            align-items: Center; /* Alinhar itens */
+            text-align: center; /* Alinhar textos */
+            background-color: grey; /* Cor de fundo */
+            margin: 30px; /* Espaçamento externo */
+            color: blue; /* Cor */
+            border-radius: 15px; /* Raio da borda */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        .card:hover { /* Mouse em cima dos cardes */
+            transform: translateY(-10px) scale(1.02); /* Move/Transforma */
+            border-color: red; /* Cor da borda */
+            box-shadow: 0 15px 20px rgb(255, 136, 0); /* Sombra */
+            background-image: url(https://i.pinimg.com/originals/76/e1/f2/76e1f27f75510488c67aa3c4adb9ed44.gif); /* Imagem de fundo ao passar o mouse sobre */
+            background-size: cover; /* Tamanho da imagem de fundo: cobrir */
+            background-position: center; /* Posição da imagem de fundo: no centro */
+            background-repeat: no-repeat; /* Repetição da imagem de fundo: sem repetição */
+            /*background-color: rgb(150, 0, 150);  / Cor de fundo */
+        }
+
+        .card img { /* Imagens dos cardes */
+            width: 40%; /* Largura */
+            height: auto; /* Altura */
+            object-fit: cover; /* Não sei */
+            border-radius: 15px; /* Raio da borda */
+        }
+
+        .vap {
+            text-decoration: none;
+            text-align: Center;
+            align-items: Center;
+            color: lightblue;
+        }
+
+        .vap:hover {
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Fim */
